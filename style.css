@@ -1,0 +1,89 @@
+main {
+    position: relative;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+}
+
+.avancar,
+.voltar {
+    position: absolute;
+    width: 25px;
+    height: 40px;
+    top: 40%;
+    border: none;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.avancar {
+    right: 5%;
+}
+
+.voltar {
+    rotate: 180deg;
+    left: 5%;
+}
+
+.painel {
+    position: relative;
+}
+
+.painel {
+    height: 100vh;
+    background-size: cover;
+    display: none;
+}
+
+.atual {
+    display: block;
+}
+
+.painel.rosa{
+    background: url(imagens/flores-rosas.jpg) no-repeat center;
+}
+
+.painel.painel.verde{
+    background: url(imagens/flores-verdes.jpg) no-repeat center;
+}
+
+.painel.montanha{
+    background: url(imagens/montanhas.jpg) no-repeat center;
+}
+
+.painel.lago{
+    background: url(imagens/lago.jpg) no-repeat center;
+}
+
+
+
+.painel .card {
+    position: absolute;
+    width: 310px;
+    height: 350px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    top: 20%;
+    left: 20%;
+    padding: 35px 30px;
+}
+
+.painel .card .titulo {
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.painel .card .paragrafo {
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+}
+
+.painel .card a {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #C50000;
+}
