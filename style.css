@@ -7,6 +7,8 @@ img {
     max-width: 100%;
 }
 
+
+
 .avancar,
 .voltar {
     position: absolute;
@@ -27,37 +29,37 @@ img {
     left: 5%;
 }
 
-.painel {
-    position: relative;
+.inativo {
+    opacity: 0.5;
+    cursor: default;
 }
 
 .painel {
+    position: relative;
     height: 100vh;
     background-size: cover;
     display: none;
 }
 
-.atual {
-    display: block;
-}
-
-.painel.rosa{
+.painel.slide-rosa {
     background: url(imagens/flores-rosas.jpg) no-repeat center;
 }
 
-.painel.painel.verde{
+.painel.slide-verde {
     background: url(imagens/flores-verdes.jpg) no-repeat center;
 }
 
-.painel.montanha{
+.painel.slide-montanha {
     background: url(imagens/montanhas.jpg) no-repeat center;
 }
 
-.painel.lago{
+.painel.slide-lago {
     background: url(imagens/lago.jpg) no-repeat center;
 }
 
-
+.atual {
+    display: block;
+}
 
 .painel .card {
     position: absolute;
@@ -85,5 +87,20 @@ img {
 .painel .card a {
     font-weight: 700;
     font-size: 1.5rem;
+}
+
+.painel .card .link-rosa {
     color: #C50000;
+}
+
+.painel .card .link-verde {
+    color: #D9DD10;
+}
+
+.painel .card .link-montanha {
+    color: #A63A17;
+}
+
+.painel .card .link-lago {
+    color: #10ACDD;
 }
